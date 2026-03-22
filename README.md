@@ -1,4 +1,4 @@
-# canva-quotes-web
+# canva
 
 **Static site only** — `index.html` + JSON. Safe for [Vercel](https://vercel.com): no Python, no build step.
 
