@@ -93,6 +93,13 @@
   .freq-track { height: 6px; background: #ebe6de; border-radius: 4px; overflow: hidden; min-width: 0; }
   .freq-fill { height: 100%; background: linear-gradient(90deg, #c94a4a, var(--accent)); border-radius: 4px; }
   .freq-n { font-family: var(--sans); font-size: 0.72rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+  .freq-details { margin: 0; padding: 0; border: none; }
+  .freq-details-summary {
+    font-family: var(--sans); font-size: 0.8rem; font-weight: 600; color: #555;
+    cursor: pointer; list-style: none; padding: 0.35rem 0 0.15rem; margin: 0;
+  }
+  .freq-details-summary::-webkit-details-marker { display: none; }
+  .freq-details[open] .freq-details-summary { color: #333; margin-bottom: 0.25rem; }
   .entries { margin-top: 0.5rem; }
   .entry {
     background: var(--card); border: 1px solid var(--border); border-radius: 12px;
@@ -181,6 +188,8 @@
       <div class="freq-track"><div class="freq-fill" style="width:9%"></div></div>
       <span class="freq-n">19</span>
     </div>
+    <details class="freq-details">
+      <summary class="freq-details-summary">10 more tags&hellip;</summary>
     <div class="freq-row">
       <span class="freq-label" title="Problem — pain:problem">Problem</span>
       <div class="freq-track"><div class="freq-fill" style="width:7%"></div></div>
@@ -231,6 +240,7 @@
       <div class="freq-track"><div class="freq-fill" style="width:5%"></div></div>
       <span class="freq-n">11</span>
     </div>
+    </details>
   </div>
 
   <div class="sticky-tools" id="filterBar">
