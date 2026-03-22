@@ -1,0 +1,5 @@
+{
+  "name": "canva-quotes-web",
+  "private": true,
+  "description": "Static files only — no build. Deploy root to Vercel."
+}
